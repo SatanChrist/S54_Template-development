@@ -26,7 +26,7 @@ SECRET_KEY = 'nsjj1i88-vcwm4uqd5vcr)%4@d(0zp__wvth7t#-93@&5-7)66'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['parasgarg.pythonanywhere.com']
 
 
 # Application definition
@@ -127,3 +127,6 @@ MEDIA_ROOT = os.path.join((BASE_DIR),"media_cdn")
  # LOGOUT_URL = 'logout'
 LOGIN_REDIRECT_URL = 'main'
 LOGOUT_REDIRECT_URL = 'main'
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
