@@ -24,9 +24,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'nsjj1i88-vcwm4uqd5vcr)%4@d(0zp__wvth7t#-93@&5-7)66'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['parasgarg.pythonanywhere.com']
+<<<<<<< HEAD
+ALLOWED_HOSTS = ['127.0.0.1','.pythonanywhere.com']
+=======
+ALLOWED_HOSTS = ['127.0.0.1','.pythonanywhere.com']
+>>>>>>> cf40713e2f0c5f4181b5de1d94ef96bbdadaa1a1
 
 
 # Application definition
