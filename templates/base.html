@@ -20,9 +20,9 @@
 
     <!-- Header Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
-      <a class="navbar-brand" href="/home">GYMS</a>
+      <a class="navbar-brand" href="/">GYMS</a>
       <div class="nav-item">
-        <form method="post" action="/home/search/">
+        <form method="post" action="/search">
           {% csrf_token %}
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Search here for Gyms....." name="search" id="search" style="width:100vh" />
@@ -40,7 +40,7 @@
       <div class="navbar-collapse" id="navbarNav">
         <ul class="nav navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/home">Home
+            <a class="nav-link" href="/">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -51,21 +51,21 @@
                 {{user.first_name}}
               </a>
               <div class="dropdown-menu" aria-labelledby="profile">
-                <a href="/home/profile" class="dropdown-item">Edit Profile</a>
-                <a href="/home/logout" class="dropdown-item">Logout</a>
+                <a href="/profile" class="dropdown-item">Edit Profile</a>
+                <a href="/logout" class="dropdown-item">Logout</a>
               </div>
             </div>
           </li>
           {% else %}
           <li class="nav-item">
-            <a class="nav-link" href="/home/login">Login</a>
+            <a class="nav-link" href="/login">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/home/signup">Signup</a>
+            <a class="nav-link" href="/signup">Signup</a>
           </li>
           {% endif %}
           <li class="nav-item">
-            <a class="nav-link" href="/home/contact">Contact</a>
+            <a class="nav-link" href="/contact">Contact</a>
           </li>
           
         </ul>
